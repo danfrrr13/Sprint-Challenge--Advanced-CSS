@@ -13,14 +13,10 @@
     align-items: center;
 }
 
-.button(@radius, @width, @height, @fontWeight, @fontSize, @bgColor, @marginBottom) {
-    .center();
+.button(@radius, @height, @width, @fontSize) {
+    .center;
     border-radius: @radius;
-    width: @width;
     height: @height;
-    font-weight: @fontWeight;
-    color: @white;
+    width: @width;
     font-size: @fontSize;
-    background-color: @bgColor;
-    margin-bottom: @marginBottom;
 }
