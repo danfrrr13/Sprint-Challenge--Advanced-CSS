@@ -1,1 +1,22 @@
 // Mixins Here
+
+.flexBox(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button(@radius, @height, @width, @fontSize) {
+    .center;
+    border-radius: @radius;
+    height: @height;
+    width: @width;
+    font-size: @fontSize;
+}
